@@ -1,0 +1,6 @@
+基于web.py的例子
+http://webpy.org/src/
+
+并且我已经写好 注释。运行的python版本是python2.7.
+
+创建数据库blog，导入数据库blog.sql.然后用户名和密码请看model.py
