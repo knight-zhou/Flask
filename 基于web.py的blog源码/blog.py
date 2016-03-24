@@ -42,9 +42,14 @@ class Index:
 
 #定义Help类
 class Help:
-    def GET(self):
-        name='tttt'
-        return render.knight(name)          #渲染到knight.html的模板页面
+    def GET(self):                   #当有人用GET请求/时，这个GET函数随时会被web.py调用,GET 方式请求URL，class index中包含了一个GET方法，用来处理与index相应的url的GET请求的，
+        """ Show page """
+         # return render.ss()
+        ss = model.new_select()
+        return render.help(ss)                          # 把 ss 渲染到help.html
+        #return "this is help page....0324-1611"                       #读取数据库的内容
+
+
 
 class Abc:
     def GET(self):
@@ -52,6 +57,7 @@ class Abc:
         city='shenzhen '                   #尝试传两个值
         cwd=os.getcwd()                  #定义当前目录
         return render.abc(name,city,cwd)          #渲染到knight.html的模板页面,传入三个参数
+
 
 
 
