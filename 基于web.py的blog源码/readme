@@ -12,3 +12,9 @@ http://127.0.0.1:8080/static/11.html
 新建一个knight文件夹访问静态页面就不行.
 
 在 Python 中写 HTML 不是聪明的选择，相反在 HTML 中写 Python 则有趣的多。(使用模板，将python的内容渲染到html页面上)
+就是python获取的值直接渲染到html页面上显示。
+路由是通过入口文件也就是主模块控制的。
+数据库里的连接控制用model.py进行控制，
+
+
+
