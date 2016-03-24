@@ -1,0 +1,10 @@
+$def with (name,city,cwd)
+<!--模板渲染统一采用def-->
+<!--把name传进来-->
+<!--<em> 标签告诉浏览器把其中的文本表示为强调的内容-->
+$if name:
+    I just wanted to say <em>hello</em> to $name.</br>
+    i come from $city</br>
+    the current directory is "$cwd"
+$else:
+    <h1>Hello</h1>, world!
