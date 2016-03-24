@@ -15,7 +15,8 @@ def get_post(id):
     except IndexError:
         return None
 
-def new_post(title, text):
+#对应blog前台页面的post提交, 插入数据
+def new_post(title, text):                       # 传入title和content的两个值,也就是前台页面定义的标签
     db.insert('entries', title=title, content=text, posted_on=datetime.datetime.utcnow())
 
 def del_post(id):

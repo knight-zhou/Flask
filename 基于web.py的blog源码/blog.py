@@ -5,8 +5,10 @@ import os
 
 ### Url mappings
 #第一部分是匹配URL的正则表达式，像/、/help/faq、/item/(\d+)等(\d+将匹配数字)。
+#定义urls的元祖
+
 urls = (
-    '/', 'Index',                        #这行表示我们要URL/(首页)被一个叫index的类处理。
+    '/', 'Index',                        #这行表示我们要URL/(首页)被一个叫index的类处理, #请求的映射在urls元组中，如上图中GET ip:port/，会直接调用index类的GET方法
     '/help','Help',                       #定义用一个help的url，由Help类去处理
     '/abc','Abc',                       #定义用一个help的url，由Help类去处理
     '/view/(\d+)', 'View',                   #匹配/view/后面加数字，并由View类去处理
@@ -26,7 +28,7 @@ render = web.template.render('templates', base='base', globals=t_globals)  #这�
 
 class Index:
 
-    def GET(self):                   #当有人用GET请求/时，这个GET函数随时会被web.py调用
+    def GET(self):                   #当有人用GET请求/时，这个GET函数随时会被web.py调用,GET 方式请求URL，class index中包含了一个GET方法，用来处理与index相应的url的GET请求的，
         """ Show page """
         posts = model.get_posts()
         return render.index(posts)
@@ -73,18 +75,19 @@ class New:
         web.form.Button('Post entry'),                           #定义了一个button
     )
 
-    def GET(self):
-        form = self.form()
+    def GET(self):                       #get请求
+        form = self.form()                                     #实例化类
         return render.new(form)
 
-    def POST(self):
-        form = self.form()
+    def POST(self):               #post提交
+        form = self.form()                 #类的实例化
         if not form.validates():
             return render.new(form)                          #渲染到new的html页面,渲染form
-        model.new_post(form.d.title, form.d.content)
-        raise web.seeother('/')
+        model.new_post(form.d.title, form.d.content)                    #数据处理模块model下new_post函数方法
+        raise web.seeother('/')              #跳转到根目录,raise用于引发异常,可以去掉 raise
 
 
+#定义删除类
 class Delete:
 
     def POST(self, id):
