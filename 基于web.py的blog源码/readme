@@ -4,3 +4,15 @@ http://webpy.org/src/
 并且我已经写好 注释。运行的python版本是python2.7.
 
 创建数据库blog，导入数据库blog.sql.然后用户名和密码请看model.py
+
+
+基于web.py的例子
+http://webpy.org/src/
+
+并且我已经写好 注释。运行的python版本是python2.7
+
+
+新建一个static的文件夹可以直接加链接访问
+http://127.0.0.1:8080/static/11.html
+
+新建一个knight文件夹访问静态页面就不行
