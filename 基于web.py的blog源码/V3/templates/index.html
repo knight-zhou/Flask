@@ -1,0 +1,18 @@
+$def with (posts)
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>这是knight的博客</title>
+</head>
+
+<h2>以下是最近提交的文章(按从近到远的顺序排列)：</h2>
+<ul>
+$for post in posts:
+    <li>
+        <a href="/view/$post.id">$post.title</a>
+
+        <a href="/edit/$post.id">编辑</a>
+    </li>
+</ul>
+
+</html>
