@@ -26,8 +26,8 @@ class Index:
     def GET(self):
         """ Show page """
         posts = model.get_posts()       #引用model下的getpost方法
-        return render.index(posts)      #posts渲染到index.html页面上
-
+        return render.blog1(posts)      #posts渲染到index.html页面上
+        # raise web.seeother('/static/blog1.html')
 
 #定义Help类
 class Help:

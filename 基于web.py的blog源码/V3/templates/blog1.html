@@ -1,0 +1,41 @@
+$def with (posts)
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的博客网站</title>
+<style type="text/css">
+.t1 {
+	text-align: center;
+}
+.ccc {
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<h1 class="t1"><strong>Knight 简易博客系统</strong></h1>
+<p>&nbsp;
+<a href="http://127.0.0.1:8080/" class="navbar-brand">首页</a>&nbsp;&nbsp;&nbsp; 
+<a href="https://github.com/knight-zhou"> 官方网站</a>  
+</p>
+<h1>&nbsp; &nbsp; Hello, world!</h1>
+          &nbsp; &nbsp;<a class="btn btn-primary btn-lg" href="tencent://message/?uin=1093381395&amp;Site=dawang&amp;Menu=yes" role="button">一起交流吧</a></br>
+<p>&nbsp; </p>
+<p><a href="http://127.0.0.1:8080/" class="list-group-item active">
+  我的分类
+</a></p>
+$for post in posts:
+    <li>
+        <a href="/view/$post.id">$post.title</a>
+
+        &nbsp;<a href="/edit/$post.id">编辑</a>
+    </li>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="../static/css/3f965d324a97d86d830305c1afd4ea8b.jpg" hspace="20" vspace="20" class="img-responsive" style="width:200px;height:150px;"></p>
+
+
+
+</body>
+</html>
