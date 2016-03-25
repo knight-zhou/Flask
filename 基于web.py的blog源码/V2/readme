@@ -1,0 +1,39 @@
+中文文档：
+http://webpy.org/tutorial3.zh-cn
+
+Web.py Cookbook 简体中文版:
+http://webpy.org/cookbook/index.zh-cn
+
+基于web.py的例子
+http://webpy.org/src/
+
+并且我已经写好 注释。运行的python版本是python2.7
+
+创建数据库blog，导入数据库blog.sql.然后用户名和密码请看model.py
+
+新建一个static的文件夹可以直接加链接访问
+http://127.0.0.1:8080/static/11.html
+
+新建一个knight文件夹访问静态页面就不行.
+
+在 Python 中写 HTML 不是聪明的选择，相反在 HTML 中写 Python 则有趣的多。(使用模板，将python的内容渲染到html页面上)
+就是python获取的值直接渲染到html页面上显示。
+路由是通过入口文件也就是主模块控制的。
+数据库里的连接控制用model.py进行控制，
+
+
+（1）今天和一个前端沟通，python页面后者java获取的信息，要在html中展示必须渲染到html上去。
+
+对于html页面，要被渲染必须要传值进来，那样的话被渲染得多的话，必须在首部定义传很多值进来。这岂不是很麻烦，前端的建议是可以在python或者java中把值封装成json对象
+
+html页面引用直接json对象名 点 key即可。
+
+（2）我们在写blog的python网站的时候我们发现，blog.py是入口文件，如果我要添加help页面 添加bbs或者其他页面必须在入口文件定义路由 并调用路由对应url的 类，类里面的函数和方法调用model.py 操作数据库。 
+得到的值再渲染到html页面上呈现。这样会导致blog.py文件很大，怎样让blog.py 只存网站结构信息和路由信息了？让其简单明了，我们可以新建index_b文件夹 post_b文件夹等，定义各种函数类和方法直接在blog.py直接引用
+个个文件夹下的函数和方法或者类即可（可以理解出自己写模块，可以是index模块，del模块，post模块等）
+文件源码请看v2版本.
+
+
+
+
+
