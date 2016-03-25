@@ -1,7 +1,8 @@
 #coding:utf8
 import web
 import model
-import os
+from bcd import *
+
 
 ### Url mappings
 #第一部分是匹配URL的正则表达式，像/、/help/faq、/item/(\d+)等(\d+将匹配数字)。
@@ -53,10 +54,10 @@ class Help:
 
 class Abc:
     def GET(self):
-        name='tttttttttt'
-        city='shenzhen '                   #尝试传两个值
-        cwd=os.getcwd()                  #定义当前目录
-        return render.abc(name,city,cwd)          #渲染到knight.html的模板页面,传入三个参数
+        # name='tttttttttt'
+        # city='shenzhen '
+        # cwd=os.getcwd()                  #
+        return render.abc(name,city,cwd)          # 引用模块下的变量
 
 
 
