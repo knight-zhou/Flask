@@ -1,3 +1,6 @@
+学习链接:
+http://old.sebug.net/paper/books/LearnPythonTheHardWay/ex51.html
+
 从v1和v2的学习我们可以看出，人们为了能够清晰的理清思路，所有在一个项目里有很多文件夹，
 每个文件夹下有自己的功能比如model  view 或者control。要用到的时候对于java和python就是from...import ...
 
