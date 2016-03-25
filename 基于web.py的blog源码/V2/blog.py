@@ -56,8 +56,8 @@ class Abc:
     def GET(self):
         # name='tttttttttt'
         # city='shenzhen '
-        # cwd=os.getcwd()                  #
-        return render.abc(name,city,cwd)          # 引用模块下的变量
+        # cwd=os.getcwd()
+        return render.abc(name,city,Cwd())          # 引用模块下的变量，以及引用函数
 
 
 

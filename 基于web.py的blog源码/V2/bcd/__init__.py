@@ -3,4 +3,9 @@
 import os
 name = 'tttt'
 city = 'shenzhenccc'
-cwd= os.getcwd()
+#cwd= os.getcwd()
+
+def Cwd():
+    return os.getcwd()      #要想在入口文件获取值必须用return，不能用print, retrun用于访问对象,记住函数要有返回值就可以了
+
+# Cwd()
