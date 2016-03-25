@@ -1,0 +1,7 @@
+﻿学习链接:
+http://old.sebug.net/paper/books/LearnPythonTheHardWay/ex51.html
+
+对于web.py框架
+python获取html的post提交的数据如下：
+
+要显示post提交的数据，可以直接在python中显示也可以从渲染到另一个html界面上。
