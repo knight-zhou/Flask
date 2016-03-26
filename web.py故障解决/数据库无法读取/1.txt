@@ -1,0 +1,12 @@
+今天读数据库并渲染到html始终不行
+原来是web.datestr的问题
+
+http://blog.csdn.net/whh1991/article/details/6727062
+
+
+真心感觉python 做web开发真的很吐血 学习进度很慢不像php了.php容易又快
+
+
+python的web开发还是不学习了好复杂 还不如学习db 太累了 还是写python工具吧自己写模块 web开发实在太难 不如pph
+
+web开发还是php好
