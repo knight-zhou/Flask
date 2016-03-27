@@ -1,4 +1,4 @@
-中文文档：
+﻿中文文档：
 http://webpy.org/tutorial3.zh-cn
 
 Web.py Cookbook 简体中文版:
@@ -23,3 +23,10 @@ http://127.0.0.1:8080/static/11.html
 
 
 
+##########注意了：
+不再学习python的web开发学习得很吐血 ，以后还是写python的脚本和python的工具。web开发设计js html 等复杂死了
+而且还要学习他们的框架 他们框架的特性我又不知道 必须要看源码才能懂  吐血死了 不如php的容易
+
+升级web需求方面从php上入手算了 不再学习了.
+
+真的浪费时间呢。学习python文本开发 调试半天 吐血
